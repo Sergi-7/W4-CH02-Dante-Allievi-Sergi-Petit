@@ -2,12 +2,10 @@ import { useState } from "react";
 
 const Input = ({ setLetter }) => {
   const [inputValue, setInputValue] = useState("");
-  const [valueText, setValueText] = useState("");
 
   const handleButtonSubmit = () => {
     setLetter(inputValue);
     setInputValue("");
-    setValueText("");
   };
 
   const handleInputChange = (event) => {

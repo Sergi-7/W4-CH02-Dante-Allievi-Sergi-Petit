@@ -25,7 +25,7 @@ function App() {
         setLetter("");
       }
     }
-  }, [randomWord, letter]);
+  }, [randomWord, letter, correctLetters, failedLetters]);
 
   return (
     <>
